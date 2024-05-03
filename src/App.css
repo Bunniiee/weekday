@@ -8,3 +8,9 @@
     grid-gap: 1rem;
     
     }
+    
+.search-css {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}

@@ -5,37 +5,27 @@ import './JobCard.css'
 const PropsCard = (props) => {
     return (
     <div className='job-card'>
+        <div className='company-name'>
+            <p>{props.props.companyName}</p>
+        </div>
         <div className='job-role'>
-            <h2>
-                <p>Role: {props.props.jobRole}</p>
-            </h2>
+            <p>Role: {props.props.jobRole}</p>
         </div>
         <div className='job-location'>
-            <h2>
-                <p>Location: {props.props.location}</p>
-            </h2>
+                <p>{props.props.location}</p>
         </div>
 
         <div className='job-salary'>
-            <h2>
-                <p>Estimated Salary: {props.props.minJdSalary} - {props.props.maxJdSalary} </p>
-            </h2>
+            <p>Estimated Salary: {props.props.minJdSalary} - {props.props.maxJdSalary} </p>
         </div>
 
         <div className='job-desc'>
-            <h2>
-                <p>About Company</p>
-            </h2>    
-            <h3>
-                <p>About Us</p>
-            </h3>
+            <p>About Company</p>
             <p>{props.props.jobDetailsFromCompany}</p>
         </div>
 
         <div className='job-exp'>
-            <h3>
-                Minimum Experience: {props.props.minExp}
-            </h3>
+            Minimum Experience: {props.props.minExp}
         </div>
 
         <div>
